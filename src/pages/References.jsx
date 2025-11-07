@@ -12,7 +12,7 @@ const References = () => {
 
       <div className="evidence-block" style={{textAlign: 'left'}}>
         <p style={{marginBottom: '1rem', paddingLeft: '2rem', textIndent: '-2rem'}}>
-          <em>The Benefits of Collaboration Between University and Industry</em>. (2024, January 15). 
+          <em>The Benefits of Collaboration Between University and Industry</em>. (2024, January 15).{' '}
           <a 
             href="https://ccaps.umn.edu/story/benefits-collaboration-between-university-and-industry" 
             target="_blank" 
