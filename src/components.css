@@ -1,0 +1,170 @@
+/* Card component for content sections */
+.card {
+  background: var(--background-overlay);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Quote/callout styles */
+.quote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  background: rgba(100, 108, 255, 0.1);
+  padding: 1rem;
+  border-radius: 0 8px 8px 0;
+}
+
+/* List styles */
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+}
+
+/* Section Image Styles */
+.section-image {
+  margin: 2rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+.section-image figcaption {
+  padding: 0.75rem 1rem;
+  background-color: #f8f9fa;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Position Variants */
+.section-image-left {
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-image-right {
+  float: right;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-image-center {
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+
+/* Size Variants - Better scaling with height control */
+.section-image-small {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.section-image-small img {
+  max-height: 200px;
+}
+
+.section-image-medium {
+  max-width: 450px;
+}
+
+.section-image-medium img {
+  max-height: 350px;
+}
+
+.section-image-large {
+  max-width: 600px;
+}
+
+.section-image-large img {
+  max-height: 450px;
+}
+
+.section-image-wide {
+  max-width: 1100px;
+}
+
+.section-image-wide img {
+  max-height: 350px;
+}
+
+.section-image-wide-tall {
+  max-width: 1100px;
+}
+
+.section-image-wide-tall img {
+  max-height: 500px;
+}
+
+.section-image-full {
+  width: 100%;
+  max-width: none;
+}
+
+.section-image-full img {
+  max-height: 450px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-image-left,
+  .section-image-right {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  
+  .section-image-small,
+  .section-image-medium,
+  .section-image-large,
+  .section-image-wide {
+    max-width: 100%;
+  }
+  
+  .section-image-small img,
+  .section-image-medium img,
+  .section-image-large img,
+  .section-image-wide img,
+  .section-image-full img {
+    max-height: none;
+  }
+}
+
+.section-image-caption-top figcaption {
+  background-color: transparent;
+}
